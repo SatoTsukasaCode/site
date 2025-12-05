@@ -1,7 +1,9 @@
 name: Download Crowdin Translations
 on:
   repository_dispatch:
-    types: [ file-fully-translated ]
+    types: 
+      - file-fully-translated
+      - file-fully-reviewed
 jobs:
   download:
     runs-on: ubuntu-latest

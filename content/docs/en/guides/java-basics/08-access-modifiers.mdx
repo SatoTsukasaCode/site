@@ -439,6 +439,123 @@ public class Player {
 }
 ```
 
+## The `static` Keyword
+
+### Static Members
+
+A class can define two kinds of members:
+
+- **Instance members** — owned by each object (each instance has its own copy).
+
+- **Static members** — owned by the class (one shared copy for the entire type).
+
+Put simply: instance members belong to objects; static members belong to the class itself and are shared by all objects of that type.
+
+#### Declaration
+
+```java
+    /* (access modifier) */ static ... memberName; 
+```
+
+#### Example
+
+```java
+class Data {
+    public int x; // Instanced member
+    public static int y = 1000; // Static member
+
+    // Instanced member:
+    // can access to both static and non-static members
+    public void foo() {
+        x = 100; // OK - same as this.x = 100;
+        y = 100; // OK - same as Data.y = 200;
+    }
+
+    // Static member:
+    // cannot access to non-static variables
+    public static void bar() {
+        x = 100; // Error: non-static variable x cannot be renference from a static context
+        y = 100; // OK
+    }
+}
+```
+
+#### Accessing static members
+
+```java
+Data data = new Data();
+data.x = 1000; // OK
+
+data.y = 1000; // OK-ish - not really suggested; it's better to use Data.y
+Data.y = 1000; // OK - best practice
+
+Data.x = 1000; // Error: cannot access instanced variables in a static context
+```
+
+### Static Fields
+
+A static field represents a data member owned by the class type rather then the object. Static fields are also stored in a specific memory location that's been shared between all the object instances that are created.
+
+It is declared as following:
+
+```java
+/* (access modifier) (optional) */ static /* final/volatile (optional) */ fieldName;
+```
+
+Let's take the same Data class example and add this constructor:
+
+```java
+public Data() {
+    y++; // remember that's the same as Data.y++;
+}
+```
+
+```java
+// Every instance of Data will have a private copy of the instanced member x
+// However it will point to the same location in memory for the member y
+Data d1 = new Data(); // y = 1001
+d1.x = 5;
+Data d2 = new Data(); // y = 1002
+d2.x = 25;
+Data d3 = new Data(); // y = 1003
+// ... and so on
+```
+
+### Static Methods
+
+Static methods essentially represent a function member of a certain class type
+
+From the Data class remember the function (instanced method) `foo` and (static method) `bar`
+
+One can access those methods via:
+
+```java
+Data d1 = new Data();
+
+d1.foo(); // Instanced method: Accessible ONLY by an object
+
+Data.bar(); // Static method: accessible without an object
+```
+
+### Static Initializer
+
+Use a _static initializer_ block to run initialization logic when the class is first loaded:
+
+```java
+class OtherData {
+    private static int a = 12;
+    private static int b;
+    private static String msg;
+
+    static {
+        msg = "Initialization..."
+        System.out.println(msg);
+        b = 4;
+        // ... complex initialization that can't be done in a single expression
+    }
+}
+```
+
 ## Practice Exercises
 
 1. **Create a `BankAccount` Class**:

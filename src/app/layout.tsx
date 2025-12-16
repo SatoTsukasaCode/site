@@ -1,10 +1,10 @@
-import { Inter } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./global.css";
 
-const inter = Inter({
+const geist = Geist({
   subsets: ["latin"],
 });
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return <div className={geist.className}>{children}</div>;
 }

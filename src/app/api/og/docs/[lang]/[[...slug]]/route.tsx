@@ -68,6 +68,8 @@ export async function GET(
     // ExtraBoldItalic,
     // Black,
     // BlackItalic,
+
+    logoImage,
   ] = await Promise.all(promises);
 
   return new ImageResponse(
@@ -118,7 +120,7 @@ export async function GET(
         }}
       >
         <img
-          src={`${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/branding/logo-light-348.png`}
+          src={`data:image/png;base64,${Buffer.from(logoImage).toString("base64")}`}
           alt="Logo"
           width={64}
           height={64}

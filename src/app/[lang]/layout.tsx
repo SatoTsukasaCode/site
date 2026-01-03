@@ -4,10 +4,17 @@ import { i18n } from "@/lib/i18n";
 import Script from "next/script";
 import englishTranslations from "@/../messages/en.json";
 import { Geist } from "next/font/google";
+import type { Metadata } from "next";
 
 const geist = Geist({
   subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
+  ),
+};
 
 const translations = Object.fromEntries(
   i18n.languages.map((lang) => {

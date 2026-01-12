@@ -311,10 +311,10 @@ export default function HomePage() {
   const params = useParams();
   const messages = useMessages();
 
-  const repeatedItems = useMemo(() => {
+  const [repeatedItems] = useState(() => {
     const shuffledItems = [...showcaseItems].sort(() => Math.random() - 0.5);
     return [...shuffledItems, ...shuffledItems, ...shuffledItems];
-  }, []);
+  });
 
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);

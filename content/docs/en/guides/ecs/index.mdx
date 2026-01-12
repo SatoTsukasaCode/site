@@ -3,6 +3,12 @@ title: Entity Component System
 description: A basic introduction into ECS (Entity Component System)
 ---
 
+<Callout type="warning">
+    This guide requires basic understanding of OOP concepts such as inheritance.
+
+    Please make sure you have a good understading of these concepts before reading this guide.
+</Callout>
+
 <Callout type="info">
     This guide is currently only on the theory of ECS and will not have code examples.
 
@@ -11,11 +17,22 @@ description: A basic introduction into ECS (Entity Component System)
 
 
 # Introduction
+
 An Entity Component System otherwise known as ECS is a design pattern in game development.
 
 ECS is made up of Entities, which reference Components and Systems that operates on Entities.
 
 It also focuses on composition over inheritance, eliminating rigid hierarchy, helps separate behavior and data and makes reusability easier.
+
+# Composition Over Inheritance
+
+Before getting into understanding what ECS is made of, lets understand what is the ECS philosophy.
+
+We can describe composition as "has X" and inheritance as "is X".
+When we inherite a class in Java, we inherite all of its attribues and methods.
+While in composotion we can choose for each object what it refrence and what systems will work on it.
+
+# Entities, Components and Systems
 
 ## Entities
 

@@ -1,68 +1,75 @@
 {
-  "displayName": "الإنجليزية",
+  "displayName": "English",
   "nav": {
     "title": "صناعة مودات هايتيل",
     "documentation": "دليل التوثيق",
-    "sponsors": "الرعاة",
-    "search": "بحث"
+    "sponsors": "Sponsors",
+    "search": "Search"
   },
   "home": {
     "title": "المرجع الأول لكيفية صناعة مودات هايتيل {flipwords}",
     "flipwords": [
       "الشروحات",
       "دليل التوثيق",
-      "أدوات",
-      "البرنامج التعليمي"
+      "Tools",
+      "Tutorials"
     ],
     "description": "أهم مورد مجتمعي لتعديل لعبة هايتيل، يقدّم أدلّة شاملة، ووثائق تفصيلية، وأدوات أساسية لمساعدتك على بدء رحلتك في عالم صناعة المودز.",
     "documentation": "الوثائق",
-    "forum": "المُنتدى",
+    "forum": "Forum",
     "discord": "انضم إلى مجتمعنا!",
-    "memberCount": "عدد الاعضاء: {count} "
+    "memberCount": "عدد الاعضاء: {count} ",
+    "countdown": "Hytale releases in {countdown}",
+    "countdownUnits": {
+      "hours": "h",
+      "minutes": "m",
+      "seconds": "s"
+    },
+    "hytaleReleased": "Hytale is out!"
   },
   "sponsors": {
-    "title": "إدعمنا",
-    "description": "",
+    "title": "Support Us",
+    "description": "HytaleModding is an open-source community project, and part of managing the community involves paying for services, servers and infrastructure, like hosting this website. If you would like to support the project, consider becoming a sponsor! We use OpenCollective so you can see how funds are being used to support the community.",
     "ourSponsors": "Our Sponsors"
   },
   "misc": {
     "loading": "جارٍ التحميل…",
-    "failedToLoad": "تعذّر التحميل.",
+    "failedToLoad": "Failed to load.",
     "gitInfoUnavailable": "معلومات Git غير متوفرة",
-    "credit": "كتب بواسطة",
-    "supportUs": "إدعمنا"
+    "credit": "Written by",
+    "supportUs": "Support Us"
   },
   "meta": {
     "established_information": {
-      "title": "معلومات موثوقة",
-      "separator": "تصنيفات خاصة",
+      "title": "Established Information",
+      "separator": "Specific Categories",
       "server": {
-        "title": "الخادم",
+        "title": "Server",
         "content_categories": {
-          "title": "تصنيفات المحتوى"
+          "title": "Content Categories"
         },
         "interface": {
-          "title": "واجهة"
+          "title": "Interface"
         }
       },
       "client": {
-        "title": "العميل"
+        "title": "Client"
       },
       "gameplay": {
-        "title": "أسلوب اللعب"
+        "title": "Gameplay"
       },
       "misc": {
-        "title": "أخرى"
+        "title": "Miscellaneous"
       }
     },
     "guides": {
-      "title": "الشروحات",
+      "title": "Guides",
       "java_basics": {
-        "title": "أساسيات جافا"
+        "title": "Java Basics"
       }
     },
     "community_projects": {
-      "title": "مشاريع المجتمع"
+      "title": "Community Projects"
     }
   }
 }

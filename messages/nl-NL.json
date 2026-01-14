@@ -1,24 +1,31 @@
 {
-  "displayName": "Nederlands",
+  "displayName": "English",
   "nav": {
     "title": "Hytale Modding",
-    "documentation": "Documentatie",
+    "documentation": "Documentation",
     "sponsors": "Sponsors",
-    "search": "Zoeken"
+    "search": "Search"
   },
   "home": {
-    "title": "Hytale Modding",
+    "title": "#1 Resource for Hytale Modding {flipwords}",
     "flipwords": [
-      "Handleidingen",
-      "Documentatie",
-      "Resources",
+      "Guides",
+      "Documentation",
+      "Tools",
       "Tutorials"
     ],
-    "description": "De nummer een bron voor het modden van Hytale gemaakt door de community, met uitgebreide handleiding, gedetailleerde documentatie, en essentiële hulpmiddelen om te beginnen met jouw modding avontuur.",
-    "documentation": "Documentatie",
+    "description": "The number one community resource for modding Hytale, featuring\ncomprehensive guides, detailed documentation, and essential tools to\nkickstart your modding journey.",
+    "documentation": "Docs",
     "forum": "Forum",
-    "discord": "Word lid van de community!",
-    "memberCount": "{count} Leden"
+    "discord": "Join the community!",
+    "memberCount": "{count} Members",
+    "countdown": "Hytale releases in {countdown}",
+    "countdownUnits": {
+      "hours": "h",
+      "minutes": "m",
+      "seconds": "s"
+    },
+    "hytaleReleased": "Hytale is out!"
   },
   "sponsors": {
     "title": "Support Us",
@@ -26,23 +33,23 @@
     "ourSponsors": "Our Sponsors"
   },
   "misc": {
-    "loading": "Aan het laden...",
+    "loading": "Loading...",
     "failedToLoad": "Failed to load.",
-    "gitInfoUnavailable": "Git informatie niet beschikbaar",
+    "gitInfoUnavailable": "Git info not available",
     "credit": "Written by",
     "supportUs": "Support Us"
   },
   "meta": {
     "established_information": {
-      "title": "Vastgestelde informatie",
-      "separator": "Specifieke categorieën",
+      "title": "Established Information",
+      "separator": "Specific Categories",
       "server": {
         "title": "Server",
         "content_categories": {
           "title": "Content Categories"
         },
         "interface": {
-          "title": "Uiterlijk"
+          "title": "Interface"
         }
       },
       "client": {
@@ -52,17 +59,17 @@
         "title": "Gameplay"
       },
       "misc": {
-        "title": "Overige"
+        "title": "Miscellaneous"
       }
     },
     "guides": {
-      "title": "Handleidingen",
+      "title": "Guides",
       "java_basics": {
         "title": "Java Basics"
       }
     },
     "community_projects": {
-      "title": "Community projecten"
+      "title": "Community Projects"
     }
   }
 }

@@ -1,45 +1,52 @@
 {
-  "displayName": "Français",
+  "displayName": "English",
   "nav": {
-    "title": "Modding d'Hytale",
+    "title": "Hytale Modding",
     "documentation": "Documentation",
     "sponsors": "Sponsors",
-    "search": "Recherche"
+    "search": "Search"
   },
   "home": {
     "title": "Ressource #1 pour le modding Hytale {flipwords}",
     "flipwords": [
       "Guides",
       "Documentation",
-      "Outils",
-      "Tutoriels"
+      "Tools",
+      "Tutorials"
     ],
-    "description": "La ressource communautaire numéro une, comprenant des guides complets, de la documentation détaillée et les outils essentiels pour démarrer votre aventure du modding.",
+    "description": "The number one community resource for modding Hytale, featuring\ncomprehensive guides, detailed documentation, and essential tools to\nkickstart your modding journey.",
     "documentation": "Docs",
     "forum": "Forum",
     "discord": "Rejoignez la communauté !",
-    "memberCount": "{count} Membres"
+    "memberCount": "{count} Members",
+    "countdown": "Hytale releases in {countdown}",
+    "countdownUnits": {
+      "hours": "h",
+      "minutes": "m",
+      "seconds": "s"
+    },
+    "hytaleReleased": "Hytale is out!"
   },
   "sponsors": {
-    "title": "Soutenez-nous",
-    "description": "HytaleModding est un projet communautaire open-source, et gérer la communauté implique en partie de financer des services, serveurs et infrastructure, comme héberger ce site web. Si vous voulez soutenir le projet, devenez un sponsor ! Nous utilisons OpenCollective pour que vous puissiez voir comment les fonds sont utilisés pour soutenir la communauté.",
-    "ourSponsors": "Nos Sponsors"
+    "title": "Support Us",
+    "description": "HytaleModding is an open-source community project, and part of managing the community involves paying for services, servers and infrastructure, like hosting this website. If you would like to support the project, consider becoming a sponsor! We use OpenCollective so you can see how funds are being used to support the community.",
+    "ourSponsors": "Our Sponsors"
   },
   "misc": {
-    "loading": "Chargement...",
-    "failedToLoad": "Échec du chargement.",
-    "gitInfoUnavailable": "Informations de git indisponibles",
-    "credit": "Écrit par",
-    "supportUs": "Soutenez-nous"
+    "loading": "Loading...",
+    "failedToLoad": "Failed to load.",
+    "gitInfoUnavailable": "Git info not available",
+    "credit": "Written by",
+    "supportUs": "Support Us"
   },
   "meta": {
     "established_information": {
-      "title": "Information vérifiée",
-      "separator": "Catégories spécifiques",
+      "title": "Established Information",
+      "separator": "Specific Categories",
       "server": {
-        "title": "Serveur",
+        "title": "Server",
         "content_categories": {
-          "title": "Catégories de contenu"
+          "title": "Content Categories"
         },
         "interface": {
           "title": "Interface"
@@ -52,17 +59,17 @@
         "title": "Gameplay"
       },
       "misc": {
-        "title": "Divers"
+        "title": "Miscellaneous"
       }
     },
     "guides": {
       "title": "Guides",
       "java_basics": {
-        "title": "Bases de Java"
+        "title": "Java Basics"
       }
     },
     "community_projects": {
-      "title": "Projets de la communauté"
+      "title": "Community Projects"
     }
   }
 }

@@ -1,68 +1,75 @@
 {
-  "displayName": "Magyar",
+  "displayName": "English",
   "nav": {
     "title": "Hytale Modding",
-    "documentation": "Dokumentáció",
-    "sponsors": "Támogatók",
-    "search": "Keresés"
+    "documentation": "Documentation",
+    "sponsors": "Sponsors",
+    "search": "Search"
   },
   "home": {
-    "title": "A Top 1 oldal Hytale modoláshoz {flipwords}",
+    "title": "#1 Resource for Hytale Modding {flipwords}",
     "flipwords": [
-      "Útmutatók",
-      "Dokumentáció",
-      "Eszközök",
-      "Tutorialok"
+      "Guides",
+      "Documentation",
+      "Tools",
+      "Tutorials"
     ],
-    "description": "Az első számú közösségi oldal Hytale modoláshoz: teljes útmutatók, részletes dokumentáció, és elengedhetetlen eszközök amikkel azonnal elkezdhetsz modolni!",
-    "documentation": "Dokumentáció",
-    "forum": "Fórum",
-    "discord": "Csatlakozz a közösséghez!",
-    "memberCount": "{count} tag"
+    "description": "The number one community resource for modding Hytale, featuring\ncomprehensive guides, detailed documentation, and essential tools to\nkickstart your modding journey.",
+    "documentation": "Docs",
+    "forum": "Forum",
+    "discord": "Join the community!",
+    "memberCount": "{count} Members",
+    "countdown": "Hytale releases in {countdown}",
+    "countdownUnits": {
+      "hours": "h",
+      "minutes": "m",
+      "seconds": "s"
+    },
+    "hytaleReleased": "Hytale is out!"
   },
   "sponsors": {
-    "title": "Támogatás",
-    "description": "A HytaleModding egy nyílt forráskódú, közösség által finanszírozott projekt. A fenntartásba beletartozik a szolgáltatások, szerverek és infrastuktúra bérlése is, aminek ez a weboldal is része. Támogass minket! OpenCollective-et használunk a támogatások nyilvántartásához, ahol bárki megnézheti miként használjuk fel a bejövő összegeket. ",
-    "ourSponsors": "Támogatóink"
+    "title": "Support Us",
+    "description": "HytaleModding is an open-source community project, and part of managing the community involves paying for services, servers and infrastructure, like hosting this website. If you would like to support the project, consider becoming a sponsor! We use OpenCollective so you can see how funds are being used to support the community.",
+    "ourSponsors": "Our Sponsors"
   },
   "misc": {
-    "loading": "Betöltés...",
-    "failedToLoad": "Sikertelen betöltés.",
-    "gitInfoUnavailable": "Git adatok nem elérhetőek.",
-    "credit": "Készítette",
-    "supportUs": "Támogatás"
+    "loading": "Loading...",
+    "failedToLoad": "Failed to load.",
+    "gitInfoUnavailable": "Git info not available",
+    "credit": "Written by",
+    "supportUs": "Support Us"
   },
   "meta": {
     "established_information": {
-      "title": "Tényleges információk",
-      "separator": "Konkrét kategóriák",
+      "title": "Established Information",
+      "separator": "Specific Categories",
       "server": {
-        "title": "Szerver",
+        "title": "Server",
         "content_categories": {
-          "title": "Tartalom"
+          "title": "Content Categories"
         },
         "interface": {
-          "title": "Interfész"
+          "title": "Interface"
         }
       },
       "client": {
-        "title": "Kliens"
+        "title": "Client"
       },
       "gameplay": {
-        "title": "Játékmenet"
+        "title": "Gameplay"
       },
       "misc": {
-        "title": "Egyéb"
+        "title": "Miscellaneous"
       }
     },
     "guides": {
-      "title": "Útmutatók",
+      "title": "Guides",
       "java_basics": {
-        "title": "Java alapok"
+        "title": "Java Basics"
       }
     },
     "community_projects": {
-      "title": "Közösségi projektek"
+      "title": "Community Projects"
     }
   }
 }

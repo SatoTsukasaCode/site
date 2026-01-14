@@ -1,5 +1,5 @@
 {
-  "displayName": "Indonesia",
+  "displayName": "English",
   "nav": {
     "title": "Hytale Modding",
     "documentation": "Documentation",
@@ -7,18 +7,25 @@
     "search": "Search"
   },
   "home": {
-    "title": "Hytale Modding",
+    "title": "#1 Resource for Hytale Modding {flipwords}",
     "flipwords": [
       "Guides",
       "Documentation",
-      "Resources",
+      "Tools",
       "Tutorials"
     ],
-    "description": "The number one community resource for modding Hytale, featuring comprehensive guides, detailed documentation, and essential tools to kickstart your modding journey.",
-    "documentation": "Documentation",
+    "description": "The number one community resource for modding Hytale, featuring\ncomprehensive guides, detailed documentation, and essential tools to\nkickstart your modding journey.",
+    "documentation": "Docs",
     "forum": "Forum",
-    "discord": "Discord",
-    "memberCount": "{count} Members"
+    "discord": "Join the community!",
+    "memberCount": "{count} Members",
+    "countdown": "Hytale releases in {countdown}",
+    "countdownUnits": {
+      "hours": "h",
+      "minutes": "m",
+      "seconds": "s"
+    },
+    "hytaleReleased": "Hytale is out!"
   },
   "sponsors": {
     "title": "Support Us",

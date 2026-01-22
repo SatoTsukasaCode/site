@@ -203,9 +203,13 @@ public class ExamplePlugin extends JavaPlugin {
         instance = this;
         LOGGER.atInfo().log("Setting up plugin " + this.getName());
         this.exampleBlockComponentType = this.getChunkStoreRegistry().registerComponent(ExampleBlock.class, "ExampleBlock", ExampleBlock.CODEC);
-        this.getChunkStoreRegistry().registerSystem(new ExampleSystem());
-
     }
+	
+	@Override
+	protected void start() {
+		this.getChunkStoreRegistry().registerSystem(new ExampleSystem());
+		this.getChunkStoreRegistry().registerSystem(new ExampleSystemInitializer());
+	}
 
     public ComponentType getExampleBlockComponentType() {
         return this.exampleBlockComponentType;
@@ -222,3 +226,27 @@ public class ExamplePlugin extends JavaPlugin {
 ![block-component-2](/assets/guides/block-component-2.png)
 
 With this logic, the block will now continuously place an Ice Block at the coordinates x + 1 relative to its current position every time it ticks.
+
+---
+
+## Common Issues
+
+### NullPointerException on Startup
+
+**Error message:**
+```java
+java.lang.NullPointerException: Cannot invoke "com.hypixel.hytale.component.query.Query.validateRegistry(com.hypixel.hytale.component.ComponentRegistry)" because "query" is null
+```
+
+**Cause:**
+This error occurs when your module is loaded **before** the required Hytale modules.
+
+**Fix:**
+Add `EntityModule` and `BlockModule` as dependencies in your `manifest.json` to ensure proper load order.
+
+```json
+"Dependencies": {
+  "Hytale:EntityModule": "*",
+  "Hytale:BlockModule": "*"
+}
+```

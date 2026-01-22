@@ -33,22 +33,26 @@ export default async function Page(
   const authors = page.data.authors;
 
   return (
-    <ViewTransition enter="blur-scale-transition" exit="blur-scale-transition">
-      <DocsPage
-        toc={page.data.toc}
-        tableOfContent={{
-          style: "clerk",
-        }}
-        full={page.data.full}
-        editOnGithub={{
-          owner: "HytaleModding",
-          repo: "site",
-          path: `content/docs/${page.path}`,
-          sha: branch,
-        }}
-      >
+    <DocsPage
+      toc={page.data.toc}
+      tableOfContent={{
+        style: "clerk",
+      }}
+      full={page.data.full}
+      editOnGithub={{
+        owner: "HytaleModding",
+        repo: "site",
+        path: `content/docs/${page.path}`,
+        sha: branch,
+      }}
+    >
+      <ViewTransition name="docs-title">
         <DocsTitle>{page.data.title}</DocsTitle>
+      </ViewTransition>
+      <ViewTransition name="docs-desc">
         <DocsDescription>{page.data.description}</DocsDescription>
+      </ViewTransition>
+      <ViewTransition name="docs-body">
         <DocsBody>
           <MDX
             components={getMDXComponents({
@@ -83,8 +87,8 @@ export default async function Page(
         )}
 
         {/* {lastModified && <PageLastUpdate date={lastModified} />} */}
-      </DocsPage>
-    </ViewTransition>
+      </ViewTransition>
+    </DocsPage>
   );
 }
 
